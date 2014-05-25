@@ -1,6 +1,6 @@
 ## makeCacheMatrix creates a matrix that can be inverted and cached.
 ## cacheSolve inverts the matrix from makeCacheMatrix and pulls it from the
-## cache.
+## cache. 
 
 
 ## Creates a matrix in which the inverse can be cached
@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         
-		m <- x$getmatrix()
+	m <- x$getmatrix()
         if(!is.null(m)) {
                 message("getting cached matrix")
                 return(m)
